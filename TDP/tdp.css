@@ -1,0 +1,105 @@
+@import url("../base.css");
+
+@media (max-width: 800px) {
+    .desktop-container {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 20% 13% 45% auto;
+        grid-template-rows: 8% 8% auto 8% 8% 8% 5% 8%;
+        height: 96vh;
+        height: calc(var(--vh, 1vh) * 96);
+        width: 94%;
+        margin-left: 3%;
+        margin-top: 2%;
+        border: solid 1px white;
+    }
+
+    .container p {
+        margin: 5px 15px;
+    }
+
+    .container h1 {
+        margin: 10px 15px;
+    }
+
+    .container > * {
+        border: solid 1px white;
+    }
+
+    .number, .title_artist, .artist, .title_year, .year, .title_location, .location, .scan_another, .audiotour, .divider_01 {
+        display: flex;
+        align-items: center;
+    }
+
+    .audiotour {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        justify-content: center;
+    }
+
+    .number {
+        justify-content: center;
+    }
+
+    .divider_01 {
+        justify-content: center;
+    }
+
+    .title {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        overflow-wrap: break-word;
+    }
+
+    .title_artist {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .artist {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .title_year {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .year {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .title_location {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .location {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .divider_03 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .scan_another {
+        justify-content: center;
+        color: #0A1208;
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .scan_another:active {
+        background-color: #0A1208;
+        color: white;
+    }

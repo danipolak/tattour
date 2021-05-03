@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+  }
+
+body {
+    background-color: #0A1208;
+    color: #FFF;
+    font-family: neue-haas-grotesk-display,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    overflow: hidden;
+}
+
+p {
+    font-size: 25px;
+}
+
+h1 {
+    color: #0A1208;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+    font-size: 90px;
+    line-height: 1;
+}
+
+h2 {
+    font-family: neue-haas-grotesk-display,sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 15px;
+}
+
+a:link, a:active, a:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+audio {
+    transform: scale(0.9);
+}
+
+/* ICONS */
+.fas {
+    color: #0A1208;
+    transform: scale(0.7);
+}
+
+.divider_01 > .fas {
+    color: white;
+    transform: rotate(45deg) scale(2);
+}
+
+/* DESKTOP */
+.desktop-container {
+    z-index: 99;
+    height: 100vh;
+    position: relative;
+    margin-right: 130px;
+    margin-left: 80px;
+}
+
+.desktop-content {
+    text-align: right;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+    
+/* CAMERA */
+    .mountfuji {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0A1208;
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 10;
+    }
+    
+    .mountfuji:active {
+        background-color: #0A1208;
+        color: white;
+    }

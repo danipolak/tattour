@@ -1,0 +1,159 @@
+@import url("base.css");
+
+@media (max-width: 800px) {
+    .desktop-container {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 22% 13% auto 30%;
+        grid-template-rows: auto 8% 25% 20% 8% 10% 8% 8%;
+        height: 96vh;
+        height: calc(var(--vh, 1vh) * 96);
+        width: 94%;
+        margin-left: 3%;
+        margin-top: 2%;
+        border: solid 1px white;
+    }
+
+    .container p {
+        margin: 5px 15px;
+    }
+
+    .container h1 {
+        margin: 10px 15px;
+    }
+
+    .container h2 {
+        margin: 10px;
+    }
+
+    .container > * {
+        border: solid 1px white;
+    }
+
+    .number, .time, .title_artist, .artist, .title_year, .year, .title_location, .location, .scan_another, .title {
+        display: flex;
+        align-items: center;
+    }
+
+    .number {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .divider_01 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .time {
+        justify-content: center;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .play-pause {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle {
+        height: 80px;
+        width: 80px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle:active {
+        background-color: #0A1208;
+    }
+
+    .play {
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 25px solid #0A1208;
+    }
+
+    .title {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        word-wrap: break-word;
+    }
+
+    .title_artist {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .artist {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .title_year {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .year {
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+
+    .title_location {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .location {
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+
+    .divider_03 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .scan_another {
+        justify-content: center;
+        color: #0A1208;
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .scan_another:active {
+        background-color: #0A1208;
+        color: white;
+    }
+
+    /* CAMERA OVERLAY */
+
+    .camerabutton {
+      position: static;
+      bottom: 0px;
+      width: 100%;
+      height: 50px;
+      background-color: white;
+      color: #0A1208;
+      line-height: 50px;
+      text-align: center;
+      z-index: 99;
+    }
+
+    .pinecone {
+
+    }
