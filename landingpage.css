@@ -1,5 +1,22 @@
 @import url("base.css");
 
+/* DOCUMENTATION DESKTOP */
+.documentation-container {
+        display: grid;
+        grid-template-columns: 22% 13% auto 30%;
+        grid-template-rows: auto 8% 25% 20% 8% 10% 8% 8%;
+        width: 94%;
+        margin-left: 3%;
+        margin-top: 2%;
+        border: solid 1px white;
+}
+
+.documentation-container > * {
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 800px) {
     .desktop-container {
         display: none;

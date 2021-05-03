@@ -75,7 +75,36 @@ audio {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-    
+
+.desktop-content p {
+  margin-top: 0.8em;
+  margin-bottom: 0.2em;
+}
+
+.desktop-content .fa-arrow-right {
+    color: white;
+}
+
+.underline {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.5px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.underline:hover::after {
+  width: 95%;
+  transition: width .3s;
+}
+
 /* CAMERA */
     .mountfuji {
         display: flex;
@@ -87,7 +116,7 @@ audio {
         grid-column-end: 5;
         grid-row-start: 10;
     }
-    
+
     .mountfuji:active {
         background-color: #0A1208;
         color: white;
