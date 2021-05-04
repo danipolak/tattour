@@ -55,7 +55,7 @@ function draw() {
   } else if (label == "aztec") {
     camera.html('<a href="https://tattour.danipolak.com/TDP/017.html"><p>is it aztec? <i class="fas fa-arrow-right"></i></p></a>');
   } else if (label == "balloons") {
-    camera.html('<a href="https://tattour.danipolak.com/TDP/013.html"><p>balloons with a smile <i class="fas fa-arrow-right"></i></p></a>');
+    camera.html('<a href="https://tattour.danipolak.com/TDP/013.html"><p>balloons <i class="fas fa-arrow-right"></i></p></a>');
   }
 }
 
