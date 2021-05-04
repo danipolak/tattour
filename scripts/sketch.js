@@ -40,18 +40,14 @@ function draw() {
   image(video, 0, 0);
 
   // Set label
-  let tattoo = "";
-  if (label == "pinecone") {
-    tattoo = "Pinecone ➔";
-  } else if (label == "ufo") {
-    tattoo = "All seeing UFO ➔";
-  }
+  let test = createDiv('');
+  test.class("camera-button");
 
-  // Draw the label
-  textSize(40);
-  textFont(myFont);
-  text(tattoo, 25, 475);
-  fill('black');
+  if (label == "pinecone") {
+    test.html('<a href="/TDP/014.html"><p>pinecone <i class="fas fa-arrow-right"></i></p></a>');
+  } else if (label == "ufo") {
+    test.html('<a href="/TDP/015.html"><p>ufo <i class="fas fa-arrow-right"></i></p></a>');
+  }
 }
 
   // Get the classification!

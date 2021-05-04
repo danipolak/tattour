@@ -1,5 +1,16 @@
 @import url("base.css");
 
+/* CAMERA BUTTON */
+.camera-button {
+  background-color: white;
+  color: #0A1208;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  text-align: center;
+  padding: 10px;
+}
+
 /* DOCUMENTATION DESKTOP */
 .documentation-container {
         display: grid;
@@ -155,22 +166,4 @@
     .scan_another:active {
         background-color: #0A1208;
         color: white;
-    }
-
-    /* CAMERA OVERLAY */
-
-    .camerabutton {
-      position: static;
-      bottom: 0px;
-      width: 100%;
-      height: 50px;
-      background-color: white;
-      color: #0A1208;
-      line-height: 50px;
-      text-align: center;
-      z-index: 99;
-    }
-
-    .pinecone {
-
     }
