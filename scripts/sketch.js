@@ -40,13 +40,22 @@ function draw() {
   image(video, 0, 0);
 
   // Set label
-  let test = createDiv('');
-  test.class("camera-button");
+  let camera = createDiv('');
+  camera.class("camera-button");
 
+  // Define TDP
   if (label == "pinecone") {
-    test.html('<a href="/TDP/014.html"><p>pinecone <i class="fas fa-arrow-right"></i></p></a>');
+    camera.html('<a href="https://tattour.danipolak.com/TDP/014.html"><p>pinecone <i class="fas fa-arrow-right"></i></p></a>');
   } else if (label == "ufo") {
-    test.html('<a href="/TDP/015.html"><p>ufo <i class="fas fa-arrow-right"></i></p></a>');
+    camera.html('<a href="https://tattour.danipolak.com/TDP/015.html"><p>all seeing ufo <i class="fas fa-arrow-right"></i></p></a>');
+  } else if (label == "bull") {
+    camera.html('<a href="https://tattour.danipolak.com/TDP/012.html"><p>bull and lobster <i class="fas fa-arrow-right"></i></p></a>');
+  } else if (label == "vacation") {
+    camera.html('<a href="https://tattour.danipolak.com/TDP/016.html"><p>far far away <i class="fas fa-arrow-right"></i></p></a>');
+  } else if (label == "aztec") {
+    camera.html('<a href="https://tattour.danipolak.com/TDP/017.html"><p>is it aztec? <i class="fas fa-arrow-right"></i></p></a>');
+  } else if (label == "balloons") {
+    camera.html('<a href="https://tattour.danipolak.com/TDP/013.html"><p>balloons with a smile <i class="fas fa-arrow-right"></i></p></a>');
   }
 }
 
