@@ -77,12 +77,16 @@ audio {
 }
 
 .desktop-content p {
-  margin-top: 0.8em;
-  margin-bottom: 0.2em;
+    margin-bottom: 0.1em;
 }
 
 .desktop-content .fa-arrow-right {
     color: white;
+    transform: rotate(-45deg);
+}
+
+#film {
+    margin-top: 0.8em;
 }
 
 .underline {
@@ -101,7 +105,7 @@ audio {
 }
 
 .underline:hover::after {
-  width: 95%;
+  width: 90%;
   transition: width .3s;
 }
 

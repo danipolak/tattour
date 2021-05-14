@@ -12,29 +12,6 @@
   z-index: 99;
 }
 
-/* DOCUMENTATION DESKTOP */
-.documentation-container {
-        display: grid;
-        grid-template-columns: 25% 10% 30% 35%;
-        width: 94%;
-        margin-left: 3%;
-        margin-top: 2%;
-        border: solid 1px white;
-}
-
-.documentation-container > * {
-    border: solid 1px white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.docu-description {
-    grid-column-start: 3;
-    grid-column-end: 3;
-}
-
 @media (max-width: 800px) {
     .desktop-container {
         display: none;
