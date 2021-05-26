@@ -13,7 +13,6 @@ body {
     font-family: neue-haas-grotesk-display,sans-serif;
     font-weight: 500;
     font-style: normal;
-    overflow: hidden;
 }
 
 p {
@@ -38,6 +37,11 @@ h2 {
     font-size: 15px;
 }
 
+ul {
+    list-style-type: none;
+    font-size: 25px;
+}
+
 a:link, a:active, a:visited {
     text-decoration: inherit;
     color: inherit;
@@ -59,30 +63,95 @@ audio {
 }
 
 /* DESKTOP */
-.desktop-container {
-    z-index: 99;
-    height: 100vh;
-    position: relative;
-    margin-right: 130px;
-    margin-left: 80px;
+.container {
+  visibility: hidden;
 }
 
 .desktop-content {
-    text-align: right;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  margin-top: 300px;
+  text-align: right;
 }
 
-.desktop-content p {
-    margin-top: 0.5em;
-    margin-bottom: 0.1em;
+.desktop-container {
+  z-index: 99;
+  height: 100vh;
+  position: relative;
+  margin-right: 130px;
+  margin-left: 130px;
 }
 
-.desktop-content .fa-arrow-right {
-    color: white;
+.desktop-flex {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: auto 13% 22% 30%;
+  grid-template-rows: auto 3% auto auto 3% auto auto auto 5% 5%;
+}
+
+.desktop-border {
+    border: solid 1px white;
+}
+
+.desktop-flex p {
+    margin: 5px 15px;
+}
+
+.desktop-flex h1 {
+    margin: 10px 15px;
+}
+
+.desktop-flex h2 {
+    margin: 10px;
+}
+
+.desktop-spacer-100, .desktop-yt-100 {
+  grid-column: 1 / span 4;
+}
+
+.desktop-yt-100, .desktop-yt-25 {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.desktop-yt-100 iframe, .desktop-yt-25 iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.desktop-spacer-100 > h2 {
+  text-align: right;
+}
+
+.desktop-spacer-75 {
+  grid-column: 2 / span 3;
+}
+
+.desktop-copy {
+  grid-column: 2 / span 3;
+  grid-row: 6 / span 3;
+  display: grid;
+  place-items: center;
+}
+
+.desktop-extra {
+  grid-column: 1 / span 4;
+}
+
+.desktop-link-spacer {
+  grid-column: 1 / span 2;
+}
+
+.desktop-link {
+  padding-left: 20px;
+}
+
+li .fas {
+  color: white;
 }
 
 .underline {
@@ -101,7 +170,7 @@ audio {
 }
 
 .underline:hover::after {
-  width: 90%;
+  width: 82%;
   transition: width .3s;
 }
 
@@ -120,4 +189,13 @@ audio {
     .mountfuji:active {
         background-color: #0A1208;
         color: white;
+    }
+
+  @media (max-width: 800px) {
+    * {
+      overflow: hidden;
+    }
+
+    .container {
+      visibility: visible;
     }

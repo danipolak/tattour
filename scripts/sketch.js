@@ -90,6 +90,8 @@ function draw() {
     camera.html('<a href="https://tattour.danipolak.com/TDP/024.html"><p>running romance <i class="fas fa-arrow-right"></i></p></a>');
   } else if (label == "fox") {
     camera.html('<a href="https://tattour.danipolak.com/TDP/023.html"><p>traveling fox <i class="fas fa-arrow-right"></i></p></a>');
+  } else if (label == "blank") {
+    camera.html('<p>scan a tattoo</p>');
   }
 }
 
