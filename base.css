@@ -1,3 +1,8 @@
+:root {
+  --black: #0A1208;
+  --white: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +13,8 @@ body, html {
   }
 
 body {
-    background-color: #0A1208;
-    color: #FFF;
+    background-color: var(--black);
+    color: var(--white);
     font-family: neue-haas-grotesk-display,sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -20,7 +25,7 @@ p {
 }
 
 h1 {
-    color: #0A1208;
+    color: var(--black);
     text-shadow:
     -1px -1px 0 #fff,
     1px -1px 0 #fff,
@@ -53,7 +58,7 @@ audio {
 
 /* ICONS */
 .fas {
-    color: #0A1208;
+    color: var(--black);
     transform: scale(0.7);
 }
 
@@ -85,7 +90,7 @@ audio {
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: auto 13% 22% 30%;
-  grid-template-rows: auto 3% auto auto 3% auto auto auto 5% 5%;
+  grid-template-rows: auto 3% auto auto 3% auto auto auto 3% 5%;
 }
 
 .desktop-border {
@@ -142,16 +147,8 @@ audio {
   grid-column: 1 / span 4;
 }
 
-.desktop-link-spacer {
-  grid-column: 1 / span 2;
-}
-
-.desktop-link {
-  padding-left: 20px;
-}
-
-li .fas {
-  color: white;
+.desktop-link .fas {
+  color: var(--white);
 }
 
 .underline {
@@ -179,7 +176,7 @@ li .fas {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #0A1208;
+        color: var(--black);
         background-color: white;
         grid-column-start: 1;
         grid-column-end: 5;
@@ -187,7 +184,7 @@ li .fas {
     }
 
     .mountfuji:active {
-        background-color: #0A1208;
+        background-color: var(--black);
         color: white;
     }
 
